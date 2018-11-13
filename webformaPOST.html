@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Get Tabela</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="col-sm-12">
+      <div class="form-group">
+        <label for="userId">User ID</label>
+        <input type="number" name="userId" class="form-control" id="userId" required>
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="body">Body</label>
+        <input type="text" name="body" class="form-control" id="body" required>
+      </div>
+      <input type="submit" class="btn pull-right btn-primary" value="Submit">
+      <button id="back" type="button" class="btn btn-secondary">Back</button>
+    </form>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#back').click(function(){
+                window.location='GetTabela.html'
+            });
+        });
+    </script>
+
+
+
+  </body>
+</html>
